@@ -1,0 +1,16 @@
+h1 {
+    color: red;/* couleur des titres de niveau 1 rouge */
+}
+h2 {
+    color: green;/* couleur des titres de niveau 2 vert */
+}
+p {
+    color: blue; /* couleur des paragraphes bleu */
+}
+.orange {
+    color: orange; 
+}
+.small-img {
+    width: 500px;   
+    height: 500px;  
+}

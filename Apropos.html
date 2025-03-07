@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Lamborghini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.freepnglogos.com/uploads/lamborghini-logo-png/lamborghini-logo-lamborghini-bull-logo-19.png" alt="Lamborghini" id="logo" width="50">
+        <h1>À propos de Lamborghini</h1>
+        <nav>
+            <ul>
+                <li><a href="siteopenclassroom.html">Retour à l'accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section id="apropos">
+        <h2>À propos de Lamborghini</h2>
+        <p>Lamborghini est une marque italienne emblématique, célèbre pour ses voitures de sport de luxe, alliant design et performance. Fondée par Ferruccio Lamborghini en 1963, l'entreprise a rapidement acquis une renommée mondiale grâce à des modèles mythiques comme la Miura et la Countach. Aujourd'hui, Lamborghini reste l'un des leaders de l'automobile de luxe.</p>
+
+        <h2>Galerie</h2>
+        <div class="image-grid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Mus%C3%A9e_Lamborghini_0099.JPG/1024px-Mus%C3%A9e_Lamborghini_0099.JPG" alt="Lamborghini 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCwVj3EoQ9_8krai4wmjHWkUwWxs0gluetSg&s" alt="Lamborghini 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiERv404mxtWifoueToGDkcGR8u9PHRsV0oA&s" alt="Lamborghini 3">
+            <img src="https://www.lamborghini-talk.com/attachments/img_2634-png.287863/" alt="Lamborghini 4">
+            <img src="https://www.lamborghini-talk.com/cdn-cgi/image/format=auto,onerror=redirect,width=1920,height=1920,fit=scale-down/https://www.lamborghini-talk.com/attachments/9bc4e7f7-4127-4aa1-8224-84369a98939c-jpg.287861/" alt="Lamborghini 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqb-TVlSkowiIu9J4o09a_ZaAOP8LZJtPHHg&s" alt="Lamborghini 6">
+        </div>
+
+        <h2>Nos valeurs</h2>
+        <ul>
+            <li><strong>Innovation :</strong> Pousser les limites de la technologie automobile.</li>
+            <li><strong>Excellence :</strong> Offrir des produits d'une qualité inégalée.</li>
+            <li><strong>Passion :</strong> Inspirer les amateurs de voitures à travers le monde.</li>
+        </ul>
+    </section>
+    <div style="margin-top: 40px;"></div>
+
+    
+    <h2>Prix des voitures</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>modèle</th>
+                <th>Puissance ( en ch ) </th>
+                <th>Prix ( $ ) </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>huracan</td>
+                <td>600</td>
+                <td>400 k</td>
+            </tr>
+            <tr>
+                <td>aventador</td>
+                <td>760</td>
+                <td>250 k </td>
+            </tr>
+            <tr>
+                <td>Urus</td>
+                <td>900</td>
+                <td>760 k </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Demande de devis</h2>
+<form action="/submit-devis" method="post">
+    <label for="name">Nom et prénom :</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" autofocus required><br><br>
+
+    <label for="model">Modèle de voiture :</label><br>
+    <select id="model" name="model" required>
+        <option value="huracan">Huracán</option>
+        <option value="aventador">Aventador</option>
+        <option value="urus">Urus</option>
+    </select><br><br>
+
+    <label for="power">Puissance souhaitée (ch) :</label><br>
+    <input type="number" id="power" name="power" min="400" max="1200" required><br><br>
+
+    <label for="budget">Budget approximatif (en $) :</label><br>
+    <input type="number" id="budget" name="budget" min="100000" required><br><br>
+
+    <label for="message">Message complémentaire :</label><br>
+    <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+    <button type="submit">Envoyer la demande</button>
+</form>
+
+    
+    
+    <p>Vous pouvez nous suivre sur les réseaux sociaux :</p>
+    <div class="social-icons">
+        <a href="https://twitter.com/Lamborghini" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com/lamborghini" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</main>
+
+<div class="gradient-bar"></div>
+</body>
+</html>

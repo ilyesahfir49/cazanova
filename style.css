@@ -1,16 +1,34 @@
-h1 {
-    color: red;/* couleur des titres de niveau 1 rouge */
+table {
+    width: 100%; /* Occupe toute la largeur disponible */
+    border-collapse: collapse; /* Fusionne les bordures */
+    border: 1px solid #000; /* Bordure noire pour l'ensemble du tableau */
 }
-h2 {
-    color: green;/* couleur des titres de niveau 2 vert */
+
+td {
+    border: 1px solid #000; /* Ajoute une bordure noire autour de chaque cellule */
+    padding: 10px; /* Espacement interne des cellules */
+    text-align: center; /* Centre le texte par défaut */
 }
-p {
-    color: blue; /* couleur des paragraphes bleu */
+
+td[colspan="4"] {
+    text-align: left; /* Alignement du texte à gauche pour les cellules fusionnées */
+    font-style: italic; /* Exemple : texte en italique pour un effet distinct */
 }
-.orange {
-    color: orange; 
+
+td[rowspan="3"] {
+    text-align: center; /* Centre le contenu de la cellule */
+    vertical-align: top; /* Alignement vertical en haut */
 }
-.small-img {
-    width: 500px;   
-    height: 500px;  
+
+img {
+    width: 150px; /* Largeur ajustée de l'image */
+    height: auto; /* Conserve le ratio de l'image */
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Ajout d'une alternance de couleurs pour les lignes impaires */
+}
+
+tr:nth-child(even) {
+    background-color: #fff; /* Couleur blanche pour les lignes paires */
 }
